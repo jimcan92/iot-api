@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\jimca\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add express
+  C:\Program Files\nodejs\node.exe C:\Users\jimca\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
 
 PATH: 
-  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\dotnet\;C:\Users\jimca\.cargo\bin;C:\Users\jimca\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\jimca\AppData\Local\Programs\Python\Python310\;C:\Users\jimca\AppData\Local\Microsoft\WindowsApps;C:\Users\jimca\AppData\Roaming\npm;C:\Users\jimca\AppData\Local\Programs\Microsoft VS Code\bin;C:\flutter\bin;C:\Users\jimca\AppData\Local\Pub\Cache\bin;C:\Users\jimca\.dotnet\tools
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\dotnet\;C:\Users\jimca\.cargo\bin;C:\Users\jimca\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\jimca\AppData\Local\Programs\Python\Python310\;C:\Users\jimca\AppData\Local\Microsoft\WindowsApps;C:\Users\jimca\AppData\Roaming\npm;C:\Users\jimca\AppData\Local\Programs\Microsoft VS Code\bin;C:\flutter\bin;C:\Users\jimca\AppData\Local\Pub\Cache\bin;C:\Users\jimca\.dotnet\tools;
 
 Yarn version: 
   1.22.18
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: connect ETIMEDOUT 104.16.25.35:443
+  Error: connect ETIMEDOUT 104.16.23.35:443
       at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)
 
 npm manifest: 
@@ -30,7 +30,9 @@ npm manifest:
       "type": "git",
       "url": "git+https://github.com/jimcan92/iot-api.git"
     },
-    "dependencies": [],
+    "dependencies": {
+      "express": "^4.18.1"
+    },
     "author": "Jimboy Cantila",
     "license": "ISC",
     "bugs": {

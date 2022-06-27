@@ -3,7 +3,7 @@ const app = express();
 const product = require('./api/product');
 
 app.use(express.json({ extended: false }))
-app.use('/api/v1/product')
+app.use('/api/v1/product', product)
 
 app.get('/', (req, res) => {
     res.send('Hello')
