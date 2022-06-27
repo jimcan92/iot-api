@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/jimcan92/iot-api.git"
   },
+  "dependencies": {
+    "express": "^4.18.1"
+  },
   "author": "Jimboy Cantila",
   "license": "ISC",
   "bugs": {
