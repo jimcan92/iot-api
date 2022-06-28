@@ -1,6 +1,6 @@
 const IotData = require('../models/IotData')
 
-module.getIotData = async (req, res, next) => {
+exports.getIotData = async (req, res, next) => {
     try {
         const iotData = await IotData.find();
         console.log(iotData);
@@ -15,7 +15,7 @@ module.getIotData = async (req, res, next) => {
     }
 }
 
-module.addIotData = async (req, res, next) => {
+exports.addIotData = async (req, res, next) => {
     try {
         const iotData = await IotData.create(req.body);
         console.log(iotData);
