@@ -6,7 +6,7 @@ const cors = require('cors');
 const iotdata = require('./routes/iodata');
 const connectDb = require('./config/db')
 
-dotenv.config({ path: './config/config.env' })
+// dotenv.config({ path: './config/config.env' })
 
 // connectDb();
 
