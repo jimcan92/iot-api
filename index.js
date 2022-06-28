@@ -1,12 +1,10 @@
+require('dotenv').config();
 const path = require('path')
 const express = require('express');
-const dotenv = require('dotenv');
 const cors = require('cors');
 
 const iotdata = require('./api/iodata');
 const connectDb = require('./config/db')
-
-dotenv.config({ path: './config/config.env' })
 
 connectDb();
 
