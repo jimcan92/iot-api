@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: connect ETIMEDOUT 104.16.23.35:443
+  Error: connect ETIMEDOUT 104.16.16.35:443
       at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)
 
 npm manifest: 
@@ -22,16 +22,23 @@ npm manifest:
     "name": "iot-api",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "server.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "start": "node server.js",
+      "dev": "nodemon server.js"
     },
     "repository": {
       "type": "git",
       "url": "git+https://github.com/jimcan92/iot-api.git"
     },
     "dependencies": {
-      "express": "^4.18.1"
+      "express": "^4.18.1",
+      "dotenv": "16.0.1",
+      "mongoose": "^6.4.1",
+      "cors": "^2.8.5"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.18"
     },
     "author": "Jimboy Cantila",
     "license": "ISC",
